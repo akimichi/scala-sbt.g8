@@ -10,7 +10,7 @@ object $name;format="Camel"$Build extends Build {
       name := "$name$",
       organization := "$organization$",
       version := "$version$",
-      scalaVersion := "$scala_version$"
+      scalaVersion := "$scala_version$",
       // add other settings here
       /** scalacOptions
        *  -unchecked
@@ -44,12 +44,6 @@ object $name;format="Camel"$Build extends Build {
           val start = now
           try { f } finally { println("Elapsed: " + (now - start)/1000.0 + " s") }
         }
-        import scala.sys.process._
-        def find(dir:String = ".", file:String ="*.scala") =
-          Seq("find", dir, "-type","f", "-name",file) 
-        def grep(pattern:String) =
-          Process("xargs grep -ni %s".format(pattern))
-        println("Usage: find() #| grep(\"pattern\") ")
         """}
     )
   )
