@@ -39,7 +39,6 @@ object $name;format="Camel"$Build extends Build {
 	  /* 以下は sbt console の起動時に実行される */
       initialCommands in console := {"""
         scala.tools.nsc.interpreter.replProps.power.enable
-        import $organization$._
         import System.{currentTimeMillis => now}
         def time[T](f: => T): T = {
           val start = now
