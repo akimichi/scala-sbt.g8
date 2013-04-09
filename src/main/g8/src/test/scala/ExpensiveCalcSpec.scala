@@ -4,8 +4,8 @@ import org.scalatest.FunSuite
 import org.scalatest.matchers.ShouldMatchers
 import org.scalatest.{ FunSpec, BeforeAndAfterAll, BeforeAndAfterEach }
 
-class ExampleSpec extends FunSpec with ShouldMatchers with BeforeAndAfterAll {
-  import example._
+class ExpensiveCalcSpec extends FunSpec with ShouldMatchers with BeforeAndAfterAll {
+  import sample._
   
   describe("Example"){
     it("1 + 1 = 2") {
