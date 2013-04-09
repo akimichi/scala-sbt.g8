@@ -8,7 +8,7 @@ import java.io.{PrintWriter}
 object ScalaProjectBuild extends Build {
 
   lazy val laboProject = Project(
-    id = "scala-project",
+    id = "scala-project2",
     base = file("."),
     settings = Project.defaultSettings ++ Seq(
       name := "A Scala Project",

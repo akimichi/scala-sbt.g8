@@ -1,4 +1,4 @@
-package example
+package $organization$
 
 object ExpensiveCalc {
   val NumInterations = 1000
